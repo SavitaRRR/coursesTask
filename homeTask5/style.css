@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 img {
 	height: 100px;
 	width: 100px;
 }
 .myclass{
 	background: red;
+=======
+img {
+	height: 100px;
+	width: 100px;
+}
+.myclass{
+	background: red;
+>>>>>>> b77113a1567883c67c8de6847bf050a4c488e882
 }
