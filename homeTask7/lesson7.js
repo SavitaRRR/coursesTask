@@ -66,4 +66,4 @@ div2 = document.getElementById("div2");
 //Framework.unevent("btn","click",function(e){
 //	alert("Событие отработало")
 //});
-Framework.dispatch("btn","click");
+//Framework.dispatch("btn","click");
