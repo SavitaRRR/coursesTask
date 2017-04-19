@@ -1,0 +1,39 @@
+table{
+	border: solid 1px black;
+	margin-bottom: 20px;
+}
+
+td{
+ 	border-right: solid black;
+}
+td:last-child{
+ 	border-right:none;
+}
+
+#drawBlock{
+	margin-top: 20px;
+	height: 1000px;
+	overflow: hidden;
+}
+.myclass{
+	background: red;
+	width :10px;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: initial;
+}
+#table{
+	float: left;
+
+}
+.button{
+	float: left;
+	overflow: hidden;
+	margin-left: 20px;
+
+	}
+button{
+	padding: 0 20px;
+	margin-right: 10px;
+
+}
