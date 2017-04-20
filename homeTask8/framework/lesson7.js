@@ -12,15 +12,16 @@ var Framework = {
 		pn.parentNode.replaceChild(what,target);
 	},
 	create: function(s){
-		
-		return document.createElementel(s);
+		var el = document.createElement(s);
+		document.body.appendChild(el);
 	},
 	remove: function(target,what){
-		target.removeChild(what);
+		var pn = document.getElementById("div1");
+		pn.removeChild(what);
 	},
 	event: function(target,event,f){
 
-		
+		var trgt = document.getElementById(target);
 		if(typeof trgt.attachEvent =="function"){
 			trgt.attachEvent("on" + event, f);
 		}else{
@@ -28,7 +29,7 @@ var Framework = {
 		}
 	},
 	unevent: function(target,event,f){
-		
+		var trgt = document.getElementById(target);
 		if(typeof trgt.detachEvent =="function"){
 			trgt.detachEvent("on" + event, f);
 		}else{
@@ -36,58 +37,20 @@ var Framework = {
 		}
 	},
 	dispatch: function(target,eT){
-		var event = document.createEvent("Event");
-		event.initEvent(eT);
-		target.dispatchEvent(event);
+		var trgt = document.getElementById(target);
+		var event = new Event (eT);
+		
+		f= function(){
+			alert("Имитация");
+		}
+		if(typeof trgt.attachEvent =="function"){
+			trgt.attachEvent("on" + eT, f);
+			trgt.dispatchEvent(event);
+		}else{
+			trgt.addEventListener(eT,f);
+			trgt.dispatchEvent(event);
+		}
 
-	},
-	width: function(e){
-		return e.clientWidth;
-	},
-	height: function(e){
-		return e.clientHeight;
-	},
-	pageTop: function(e){
-		var offset = 0;
-		while(e.offsetParent!= null){
-			offset = e.offsetTop;
-			e = e.offsetParent;
-		}
-		return offset;
-	},
-	pageLeft: function(e){
-		var offset = 0;
-		while(e.offsetParent!= null){
-			offset = e.offsetLeft;
-			e = e.offsetParent;
-		}
-		return offset;
-	},
-	css: function(e, property, value){
-		if(arguments.length == 2){
-			var style = window.getComputedStyle(e);
-			return style[property];
-		}
-		if(arguments.length == 3){
-			e.style[property] = value;
-		}
-	},
-	Get:{
-		byId: function(s){
-			return document.getElementById(s);
-		},
-		bySelector: function(s){
-			return document.querySelector(s);
-		},
-		bySelectorAll: function(s){
-			return document.querySelectorAll(s);
-		},
-		byClass: function(s){
-			return document.getElementsByClassName(s);
-		},
-		byTag: function(s){
-			return document.getElementsByTagName(s);
-		}
 	}
 }
 div1 = document.getElementById("div1");

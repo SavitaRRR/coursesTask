@@ -45,4 +45,3 @@ var timerId = setTimeout(function tick() {
 	})
   timerId = setTimeout(tick, 3000);
 }, 3000);
-

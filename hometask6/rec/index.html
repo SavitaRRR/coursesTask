@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- <form name="calc" id="calculator">
+
+		<div class="text">
+			<input type="text" name="input"  class="display">
+		</div>
+		<div class="button">
+				<input type="button" name="1" value="1" OnClick="input.value += '1'">
+				<input type="button" name="2" value="2" OnClick="input.value += '2'">
+				<input type="button" name="3" value="3" OnClick="input.value += '3'">
+				<input type="button" name="+" value="+" OnClick="input.value += '+'">
+				<input type="button" name="MR" value="MR" >
+				<br>
+				<input type="button" name="4" value="4" OnClick="input.value += '4'">
+				<input type="button" name="5" value="5" OnClick="input.value += '5'">
+				<input type="button" name="6" value="6" OnClick="input.value += '6'">
+				<input type="button" name="-" value="-" OnClick="input.value += '-'">
+				<input type="button" name="M+" value="M+" id ="Mplsu">
+				<br>
+				<input type="button" name="7" value="7" OnClick="input.value += '7'">
+				<input type="button" name="8" value="8" OnClick="input.value += '8'">
+				<input type="button" name="9" value="9" OnClick="input.value += '9'">
+				<input type="button" name="*" value="*" OnClick="input.value += '*'">
+				<input type="button" name="M-" value="M-" >
+				<br>
+				<input type="button" name="clear" value="c" OnClick="input.value = ''">
+				<input type="button" name="zero" value="0" OnClick="input.value += '0'">
+				<input type="button" name="doit" value="=" OnClick="input.value = eval(input.value)">
+				<input type="button" name="div"  value="/" OnClick="input.value += '/'">
+				<input type="button" name="MC" value="MC" >
+
+		</div>
+</form> -->
+	<table>
+		<tbody>
+			<tr>
+				<input type="text" name="input" id="display" class="display">
+				
+			</tr>
+			<tr>
+				<td><input type="button" name="1" value="1" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="2" value="2" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="3" value="3" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="4" value="4" OnClick="getValue(this.value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="5" value="5" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="6" value="6" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="7" value="7" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="8" value="8" OnClick="getValue(this.value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="9" value="9" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="0" value="0" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="+" value="+" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="-" value="-" OnClick="getValue(this.value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="*" value="*" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="/" value="/" OnClick="getValue(this.value)"></td>
+				<td><input type="button" name="=" value="=" OnClick="display.value = eval(input.value)"></td>
+				<td><input type="button" name="c" value="c" OnClick="clr()"></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="domRecursion.js"></script>
+</body>
+</html>
