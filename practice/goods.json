@@ -1,0 +1,7 @@
+[{"title":"стол","price":18,"Availability":true,"description":"удобный кухонный стол","img":"img/item2.png"},
+	{"title":"компьютер","price":22,"Availability":false,"description":"кампуктер","img":"img/item3.png"},
+	{"title":"стул","price":22,"Availability":true,"description":"стул","img":"img/item.png"},
+	{"title":"холодильник","price":33,"Availability":true,"description":"холодильник","img":"img/item1.png"},
+	{"title":"холодильник","price":33,"Availability":true,"description":"холодильник","img":"img/item1.png"},
+	{"title":"холодильник","price":33,"Availability":true,"description":"холодильник","img":"img/item1.png"}
+]
